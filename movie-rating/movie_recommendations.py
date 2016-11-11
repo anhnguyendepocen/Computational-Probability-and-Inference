@@ -6,10 +6,6 @@ Modified by:
 - Ryan Sloot
 - Danielle Pace (6.008 TA, Fall 2016),
 - George H. Chen (6.008/6.008.1x instructor, Fall 2016)
-
-Please read the project instructions beforehand! Your code should go in the
-blocks denoted by "YOUR CODE GOES HERE" -- you should not need to modify any
-other code!
 """
 
 import matplotlib.pyplot as plt

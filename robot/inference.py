@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # inference.py
-# Base code by George H. Chen (georgehc@mit.edu) -- updated 10/18/2016
 import collections
 import sys
 
