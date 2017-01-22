@@ -6,6 +6,8 @@ obs_states = ['H', 'T']
 states_map = {s:i for i,s in enumerate(states)}
 obs_map = {s:i for i,s in enumerate(obs_states)}
 A = np.array([[3/4, 1/4], [1/4, 3/4]]) #(0,0) --> fair,fair; (0,1)-->fair,biased
+# recall B matrix is observation state (HHTTT)
+# first row is 1/2*1/2=1/4, 1/2*1/4=1/8 fair/biased
 B = np.array([[1/4, 1/8], [1/2, 1/4], [1/2, 3/4], [1/2, 3/4], [1/2, 3/4]]) #row-fair/biased , col-h or t P(Yi|Xi)
 # print(B)
 # print(A)
@@ -16,6 +18,7 @@ for i, x_i in enumerate(observations):
 	if i == len(observations)-1: break
 	obs_i = obs_map[x_i]
 	phi = -np.log2(B[i,:]) ## hmmm
+	# print(phi)
 
 	m={} #messages
 	t={} #taceback messages

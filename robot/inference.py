@@ -156,7 +156,7 @@ def forward_backward(observations):
             marginals[i] = np.multiply(backward_messages[i],forward_messages[i])
 
 
-    ## marginals as dictionary
+    ## converting marginals to dictionary
     marg_dict = [None]*num_time_steps
     for j,m in enumerate(marginals):
         x = Distribution()
